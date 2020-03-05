@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+</head>
+<body>
+    <form name="signup" id="signup" action="#" method="post">
+        <fieldset>
+            <div>
+                <label>
+                    Имя
+                    <input type="text" minlenghth="2" name="name" required />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Логин
+                    <input type="text" name="login" required />
+                </label>
+            </div>
+            <div>
+                <label for="email"> E-mail</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label>
+                    Пароль
+                    <input type="password" minlength="6" name="password" required placeholder="минимум 6 символов" />
+                </label>
+            </div>
+            <div>
+                <label for="birth">Дата рождения</label>
+                <input type="date" id="birth" name="birth" />
+            </div>
+            <label for="gender">Пол</label>
+            <select id="gender" name="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            <div>
+                <label for="news">Получать информацию об обновлениях сайта на указанный e-mail</label>
+                <input type="checkbox" id="news" name="news" checked />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Ваш основной род деятельности</legend>
+            <label>
+                <input type="radio" name="occupation[]" value="student" checked /> Студент
+            </label>
+            <label>
+                <input type="radio" name="occupation[]" value="employee" /> Работник
+            </label>
+            <label>
+                <input type="radio" name="occupation[]" value="businessman" /> Предприниматель
+            </label>
+            <label>
+                <input type="radio" name="occupation[]" value="unemployed" /> Безработный
+            </label>
+            <label>
+                <input type="radio" name="occupation[]" value="pensioner" /> Пенсионер
+            </label>
+        </fieldset>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

@@ -4,11 +4,61 @@
 <head>
     <meta charset="utf-8" />
     <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+<header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">Главная</a>
+                </li>
+                <li> 
+                <a href="author.html">Об авторе </a>
+                </li>
+                <li>
+                    <a href="countries.html">Страны</a>
+                    <ul>
+                        <li>
+                        Европа
+                            <ul>
+                                <li>
+                                    <a href="italy.html">Италия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Испания</a>
+                                </li>
+                                <li>
+                                <a href="#">Франция</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Азия
+                            <ul>
+                                <li>
+                                <a href="#">Китай</a>
+                                </li>
+                                <li>
+                                 <a href="#">Индия</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Советы путешественникам</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Связаться со мной</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
 <body>
-    <form name="signup" id="signup" action="#" method="post">
-        <fieldset>
-            <div>
+    <main>
+        <form name="signup" id="signup" action="#" method="post">
+            <fieldset>
+                <div>
                 <label>
                     Имя
                     <input type="text" minlenghth="2" name="name" required />
@@ -64,5 +114,6 @@
         </fieldset>
         <input type="submit" value="Отправить">
     </form>
+</main>
 </body>
 </html>

@@ -1,0 +1,33 @@
+﻿
+body {
+    background: url(imgcss/globe.jpg) #B0E0E6  no-repeat center;
+    background-attachment: fixed;
+    color: #333333;
+    font-size: 18px;
+    font-family: Museo Sans Cyrl,Helvetica,Arial;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: #44C373;
+}
+footer {
+    padding: 10px ;
+    background: #060336;
+}
+
+.author {
+    color: green;
+}
+.button {
+    font-weight:700;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #44C373;
+    border-radius: 10px;
+}

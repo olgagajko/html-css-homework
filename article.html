@@ -5,8 +5,57 @@
     <meta charset="utf-8" />
     <title>Добавить статью</title>
 </head>
+<header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">Главная</a>
+                </li>
+                <li> 
+                <a href="author.html">Об авторе </a>
+                </li>
+                <li>
+                    <a href="countries.html">Страны</a>
+                    <ul>
+                        <li>
+                        Европа
+                            <ul>
+                                <li>
+                                    <a href="italy.html">Италия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Испания</a>
+                                </li>
+                                <li>
+                                <a href="#">Франция</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Азия
+                            <ul>
+                                <li>
+                                <a href="#">Китай</a>
+                                </li>
+                                <li>
+                                 <a href="#">Индия</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Советы путешественникам</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Связаться со мной</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
 <body>
-    <p>Заполните форму, чтобы добавить на сайт статью</p>
+    <main>
+        <p>Заполните форму, чтобы добавить на сайт статью</p>
     <form entype="multipart/form-data" name="add_article" action="#" method="post">
         <div>
             <label for="title">Введите заголовок</label>
@@ -20,5 +69,6 @@
         </div>
     </form>
     <button form="add_article">Отправить</button> <!--кнопка привязывается к форме через атрибут form со значением id формы-->
+    </main>
 </body>
 </html>

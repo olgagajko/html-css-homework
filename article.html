@@ -3,18 +3,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flex.css"> 
     <title>Добавить статью</title>
 </head>
-<header>
-        <nav>
-            <ul>
-                <li>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-2">
                     <a href="main.html">Главная</a>
                 </li>
-                <li> 
+                <li class= "flex-2"> 
                 <a href="author.html">Об авторе </a>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="countries.html">Страны</a>
                     <ul>
                         <li>
@@ -44,19 +47,25 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="#">Советы путешественникам</a>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="contacts.html">Связаться со мной</a> 
+                </li>
+                <li class= "flex-2">
+                    <a href="contacts.html">Войти</a> 
                 </li>
             </ul>
         </nav>
     </header>
-<body>
-    <main>
+     <main>
         <p>Заполните форму, чтобы добавить на сайт статью</p>
     <form entype="multipart/form-data" name="add_article" action="#" method="post">
+        <div>
+            <label for="author">Укажите автора</label>
+            <input type="text" name="author" id="author" required />
+        </div>
         <div>
             <label for="title">Введите заголовок</label>
             <input type="text" name="title" id="title" required />
@@ -71,4 +80,7 @@
     <button form="add_article">Отправить</button> <!--кнопка привязывается к форме через атрибут form со значением id формы-->
     </main>
 </body>
+<footer>
+    <a href="main.html">На главную</a>
+</footer>
 </html>

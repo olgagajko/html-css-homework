@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -6,19 +6,21 @@
     <meta name="description" content="блог путешественника">
     <meta name="keywords" content="travelling, blog, europe, asia">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/flex.css"/>
     <title>Главная</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-2">
                     <a href="main.html">Главная</a>
                 </li>
-                <li> 
+                <li class= "flex-2"> 
                 <a href="author.html">Об авторе </a>
                 </li>
-                <li>
+                <li class= "flex-2 submenu">
                     <a href="countries.html">Страны</a>
                     <ul>
                         <li>
@@ -48,23 +50,81 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="#">Советы путешественникам</a>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="contacts.html">Связаться со мной</a> 
+                </li>
+                <li class= "flex-2">
+                    <a href="contacts.html">Войти</a> 
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <img src="images/sunset.jpg" alt="закат" width="600" height="400">
+        <div class="flex-row"> 
+            <div class="flex-8">
+                <h2> <a href="author.html">Обо мне</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+            </div>
+            <div class="flex-4"> 
+                <img class="authimg" src="images/author.jpg">
+            </div>
         </div>
-        <div>
-            <p>Здравствуйте! Меня зовут <b>Иван Иванов</b>, я путешествую по миру уже более 15 лет.</p>
-            <p>В своем блоге я расскажу о культуре и особенностях разных стран.</p>
-        </div>
+        <div class="flex-row"> 
+            <article class="flex-6 center">
+                <h3> <a href="italy.html">Италия</a></h3>
+                <a href="author.html">Иванов И. И.</a>
+                <span>23.10.2018</span>
+                <div>
+                    <img src="images/rome.jpg">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <a class="button">Читать далее</a>
+            </article>
+            <article class="flex-6 center">
+                <h3>Испания</h3>
+                <a href="author.html">Иванов И. И.</a>
+                <span> 23.10.2018</span>
+                 <div>
+                    <img src="images/rome.jpg">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <a class="button">Читать далее</a>
+            </article>
+            <article class="flex-6 center">
+                <h3>Франция</h3>
+                    <a href="author.html" class="author">Иванов И. И.</a>
+                <span> 23.10.2018</span>
+                <div>
+                    <img src="images/rome.jpg">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <a class="button">Читать далее</a>
+            </article>
+            <article class="flex-6 center">
+                <h3>Китай</h3>
+                <a href="author.html">Иванов И. И.</a>
+                <span> 23.10.2018</span>
+                <div>
+                    <img src="images/rome.jpg">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <a class="button">Читать далее</a>
+            </article>
+            <article class="flex-6 center">
+                <h3>Индия</h3>
+                <a href="author.html">Иванов И. И.</a>
+                <span> 23.10.2018</span>
+                <div>
+                    <img src="images/rome.jpg">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna. <p>
+                <a class="button">Читать далее</a>
+            </article>
+        </div> 
     </main>
     <footer>
         <div>

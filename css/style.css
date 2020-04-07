@@ -1,12 +1,15 @@
 ﻿
 body {
-    background: url(imgcss/globe.jpg) #B0E0E6  no-repeat center;
+    background: url(imgcss/globe.png) #bad2d4  no-repeat center;
     background-attachment: fixed;
     color: #333333;
     font-size: 18px;
     font-family: Museo Sans Cyrl,Helvetica,Arial;
     margin: 0;
     padding: 0;
+}
+header {
+    background: #060336;
 }
 main {
     margin: 10px;
@@ -19,7 +22,13 @@ footer {
     padding: 10px ;
     background: #060336;
 }
-
+ h3 {
+    margin:0;
+}
+img {
+  width: 100%; 
+  height: auto;
+}
 .author {
     color: green;
 }
@@ -31,3 +40,11 @@ footer {
     background: #44C373;
     border-radius: 10px;
 }
+.authimg {
+    border-radius: 50%
+}
+.authinfo {
+    font-size: 9px;
+}
+
+

@@ -4,23 +4,24 @@
 <head>
     <meta charset="utf-8" />
     <title>Страны, в которых я побывал</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css"> 
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-2">
                     <a href="main.html">Главная</a>
                 </li>
-                <li> 
+                <li class= "flex-2"> 
                 <a href="author.html">Об авторе </a>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="countries.html">Страны</a>
-                    <ul>
+                    <ul class="submenu">
                         <li>
-                        Европа
+                        <a href="#">Европа</a>
                             <ul>
                                 <li>
                                     <a href="italy.html">Италия</a>
@@ -34,7 +35,7 @@
                             </ul>
                         </li>
                         <li>
-                        Азия
+                        <a href="#">Азия</a>
                             <ul>
                                 <li>
                                 <a href="#">Китай</a>
@@ -46,49 +47,76 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="#">Советы путешественникам</a>
                 </li>
-                <li>
+                <li class= "flex-2">
                     <a href="contacts.html">Связаться со мной</a> 
+                </li>
+                <li class= "flex-2">
+                    <a href="contacts.html">Войти</a> 
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Страны, в которых я побывал</h2>
-        <ul>
-            <li>
-                Европа
-                <ul>
-                    <li>
-                        <a href="italy.html">Италия</a>
-                        <ol>
-                            <li>Рим</li>
-                            <li>Милан</li>
-                            <li>Флоренция</li>
-                        </ol>
-                    </li>
-                    <li>
-                        <a href="#">Испания</a>
-                    </li>
-                    <li>
-                        <a href="#">Франция</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Азия
-                <ul>
-                    <li>
-                        <a href="#">Китай</a>
-                    </li>
-                    <li>
-                        <a href="#">Индия</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+     <main>
+        <h1 class="center">Страны, в которых я побывал</h1>
+            <h2>Европа</h2>
+            <div class="flex-row">
+                <div class="flex-6">
+                    <h3>Италия</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                </div>
+                <div class="flex-6 flex-column">
+                    <div class="flex-4">
+                    <h3>Рим</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                    </div>
+                    <div class="flex-4">
+                    <h3>Милан</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                    </div>
+                    <div class="flex-4">
+                    <h3> Флоренция</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Испания</h3>
+                <div class="flex-row">
+                    <div class="flex-4">
+                        <img src="images/rome.jpg">
+                     </div>
+                     <div class="flex-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                     </div>
+                </div>
+            <h3>Франция</h3>
+            <div class="flex-row">
+                    <div class="flex-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                     </div>
+                     <div class="flex-4">
+                        <img src="images/rome.jpg">
+                     </div>
+                </div>
+            <h2 >Азия</h2>
+            <div class="flex-row">
+                <div class="flex-6">
+                    <h3>Китай</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                </div>
+                <div class="flex-6">
+                    <h3>Индия</h3>
+                    <img src="images/rome.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
+                </div>
+            </div>
     </main>
     <footer>
         <a href="main.html">На главную </a>

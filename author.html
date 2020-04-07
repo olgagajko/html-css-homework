@@ -1,20 +1,73 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html> 
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css"> 
     <title>Об авторе</title>
 </head>
 <body>
-    <main>
-        <h1>Об авторе</h1>
-        <div>
-            <img src="images/author.jpg" alt="автор" width="300" height="300"
+    <header>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-2">
+                    <a href="main.html">Главная</a>
+                </li>
+                <li class= "flex-2"> 
+                <a href="author.html">Об авторе </a>
+                </li>
+                <li class= "flex-2">
+                    <a href="countries.html">Страны</a>
+                    <ul>
+                        <li>
+                        Европа
+                            <ul>
+                                <li>
+                                    <a href="italy.html">Италия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Испания</a>
+                                </li>
+                                <li>
+                                <a href="#">Франция</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Азия
+                            <ul>
+                                <li>
+                                <a href="#">Китай</a>
+                                </li>
+                                <li>
+                                 <a href="#">Индия</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class= "flex-2">
+                    <a href="#">Советы путешественникам</a>
+                </li>
+                <li class= "flex-2">
+                    <a href="contacts.html">Связаться со мной</a> 
+                </li>
+                <li class= "flex-2">
+                    <a href="contacts.html">Войти</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main  class="flex-row">
+        <div class="flex-4">
+            <img class="authimg" src="images/author.jpg" alt="автор">
         </div>
-        <div>
+        <div class="flex-8">
+            <h2>Об авторе</h2>
             <p>Меня зовут Иванов Иван. Много путешествовать я мечтал с детства.</p>
-            <p>И вот я тут.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, erat sed convallis egestas, risus nisi efficitur lorem, in dapibus arcu sem ac arcu. Integer tincidunt quam quis tellus ornare, pretium eleifend quam posuere. Nam in nisl mauris. Fusce egestas leo sapien, sit amet porttitor ex gravida a. Sed quis gravida magna.</p>
         </div>
     </main>
 </body>

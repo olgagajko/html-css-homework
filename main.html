@@ -13,43 +13,32 @@
 <body>
     <header>
         <nav class="container">
-            <ul class="flex-row space-between">
+            <ul class="menu flex-row space-between">
                 <li class= "flex-2">
                     <a href="main.html">Главная</a>
                 </li>
                 <li class= "flex-2"> 
                 <a href="author.html">Об авторе </a>
                 </li>
-                <li class= "flex-2 submenu">
+                <li class= "flex-2 menu">
                     <a href="countries.html">Страны</a>
                     <ul>
                         <li>
-                        Европа
-                            <ul>
-                                <li>
-                                    <a href="italy.html">Италия</a>
-                                </li>
-                                <li>
-                                    <a href="#">Испания</a>
-                                </li>
-                                <li>
-                                <a href="#">Франция</a>
-                                </li>
-                            </ul>
+                            <a href="italy.html">Италия</a>
                         </li>
                         <li>
-                        Азия
-                            <ul>
-                                <li>
-                                <a href="#">Китай</a>
-                                </li>
-                                <li>
-                                 <a href="#">Индия</a>
-                                </li>
-                            </ul>
+                            <a href="#">Испания</a>
+                        </li>
+                        <li>
+                            <a href="#">Франция</a>
+                        </li>
+                        <li>
+                            <a href="#">Китай</a>
+                        </li>
+                        <li>
+                             <a href="#">Индия</a>
                         </li>
                     </ul>
-                </li>
                 <li class= "flex-2">
                     <a href="#">Советы путешественникам</a>
                 </li>
@@ -57,11 +46,32 @@
                     <a href="contacts.html">Связаться со мной</a> 
                 </li>
                 <li class= "flex-2">
-                    <a href="contacts.html">Войти</a> 
+                    <a href="#authmodal">Войти</a> 
                 </li>
             </ul>
         </nav>
     </header>
+  <div id="authmodal" class="authmodal">
+      <div class="modal">
+        <h3 class="form-header">Войти на сайт</h3>
+        <div class="modalform">
+            <form enctype="multipart/form-data" name="authorisation" action="#" method="post">
+                <div class="forms">
+                    <label for="login">Логин </label>
+                    <input type="text" id="login" name="login">
+                </div>
+                <div class="forms">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div>
+                    <button type="submit"> Войти</button>
+                </div>
+                <a href="#close" title="Close" class="close">×</a>
+            <form>
+        </div>
+      </div>
+</div>
     <main>
         <div class="flex-row"> 
             <div class="flex-8">

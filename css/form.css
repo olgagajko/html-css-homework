@@ -1,0 +1,21 @@
+
+input[type="submit"] {
+    font-weight:700;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #44C373;
+    border-radius: 10px;
+    border-color: #44C373;
+}
+
+form :invalid + span:after {
+    content: "\2717";
+    font-weight: bolder;
+    color: red;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+
